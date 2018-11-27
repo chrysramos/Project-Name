@@ -160,8 +160,8 @@ $RECYCLE.BIN/
 *.lnk
 
 ### Project directories not required ###
-assets/css/*.css*
-assets/js/*.js*
+assets/css/*
+assets/js/*
 dist/
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode
