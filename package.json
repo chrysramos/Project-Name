@@ -1,0 +1,35 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Description of the new project is here ...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chrysramos/Project-Name.git"
+  },
+  "author": "Chrys Ramos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrysramos/Project-Name/issues"
+  },
+  "homepage": "https://github.com/chrysramos/Project-Name#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "imagemin-svgo": "^7.0.0"
+  }
+}
