@@ -13,7 +13,7 @@ gulp.task('js-build', function () {
     .pipe(gulp.dest('dist'))
     .pipe(gp_rename('app.min.js'))
     .pipe(gp_uglify())
-    .pipe(gulp.dest('assets/js/build/'));
+    .pipe(gulp.dest('assets/js/build-js/'));
 });
 
 gulp.task('css-build', function () {
@@ -24,7 +24,7 @@ gulp.task('css-build', function () {
     .pipe(gp_rename('app.min.css'))
     .pipe(cssmin())
     .pipe(gp_sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/css/build/'));
+    .pipe(gulp.dest('assets/css/build-css/'));
 });
 
 gulp.task('sass-build', function () {
@@ -35,7 +35,7 @@ gulp.task('sass-build', function () {
 
 gulp.task('image-build', function () {
   return gulp.src(['assets/img/*'])
-    .pipe(gulp.dest('assets/img/build/'))
+    .pipe(gulp.dest('assets/img/build-img/'))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
